@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Design Your Website</h2>
+    <p>Don't Forget like,comment,share and subscribe</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <div class="profile-card">
+      <img class="profile-image" src="iki.jpg" alt="Profile Image">
+      <div class="profile-info">
+        <h2>Muhammad Rifki Madamar</h2>
+        <p><strong>NIM    :</strong> 16323047</p>
+        <p><strong>JURUSAN:</strong> Manajemen Informatika</p>
+        <p><strong>HOBI   :</strong> Berenang</p>
+        <p><strong>TTL    :</strong> Fakfak,03 September 2004</p>
+        <p><strong>NO HP  :</strong> 082198263380</p>
+        <p><strong>EMAIL  :</strong> <a href="muhammad030924@gmail.com">muhammad030924@gmail.com</a></p>
+        <p><strong>SOSIAL MEDIA :</strong> <a href="https://www.instagram.com/muhmmaadrifki?igsh=dnJldm9xMGJqY3Jw">muhmmaadrifki</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Audio WhatsApp 2024-07-26 pukul 22.30.19_2a3470d3.mp3"></audio>
+    <video src="laut.mp4" controls width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>halloooooo semua!!!! <br>
+      Perkenalkan Nama saya Muhammad Rifki Madamar <br>
+      saya lahir di fakfak,3 september 2004,saya anak pertama dari 4 bersaudara,saya tinggal di wagom tanjung jalan letda dirwan <br>
+      Riwayat Pendidikan saya MI Asy-Syafi'iyah Fakfak 2011-2017,MTS N Fakfak 2017-2020,MAN Fakfak 2020-2023,Politeknik N Fakfak 2023-Sekarang. <br>
+      Hobi saya berenang,lari,dengar musik,healing dan taekwondo,itu saja sedikit penjelasan tentang diri saya Terima Kasihhh!!!!!
+    </p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <iframe src="https://www.kompas.com/tren/read/2024/07/30/081500165/kata-media-asing-usai-indonesia-juara-piala-aff-u19-2024-sebut-raja-baru-di" width="1000" height="1000" frameborder="0"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Rifki</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+  
+<script>
+  // Fungsi untuk mengubah latar belakang menjadi transparan
+  function makeBackgroundTransparent() {
+    var profileCard = document.querySelector('.profile-card');
+    profileCard.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+  }
+
+  // Panggil fungsi saat halaman dimuat
+  window.onload = makeBackgroundTransparent;
+</script>
+</body>
+</html>
